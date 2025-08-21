@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        table, th, td {
-  border: 1px solid black;
-}
-</style>
+<style>
+
+/*Style specifications:
+1.	The page should have a background image that is centered and not repeated. ✅
+2.	The heading (text) is centered, with a background color (in HEX format) and font family of your choice. ✅
+It should have a 2px dotted blue border, and a 10px padding at its top and bottom and a 15px padding on its right and left. ✅🥲
+The width of the box should be 250px, with a margin at the bottom of 20px.✅🤑🤑🤑 12:34 AM
+3.	The paragraph should be justified and italicized, with background color (in HSL format) of your choice. ✅easr, i typed 'text' 'font' and it auto recommended me stuff!! 12:47am
+It should have a padding of 20px on all sides and a 3px black border with different border styles (of your choice) on each side.✅1:10 AM
+The width of the paragraph should be 500px.✅😴💤💤1:15 AM
+4.	The <span> element should be bold, italicized andwith a different font color (of your choice) in RGB format).✅i loev green but blue lookd better this time 😓1:18 a.m
+    It has a margin of 2px and 5px for left and right, respectively.✅idk which is which but put 2px for left first and 5px after for right 🐛1:34 am
+*/
+    body { /*🐛 1.	The page should have a background image that is centered and not repeated.*/
+        background-image: url("imgs/BG1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+    .lanlan {
+    text-align: center;
+    background-color: #aaddff;
+    font-family: Arial, sans-serif;
+    border-style: dotted;
+    border-color: blue;
+    margin-bottom: 20px;
+    width: 250px;
+    padding: 10px 15px;
+    }
+
+    .bold-text {
+    font-weight: bold;
+    }
+
+
+    p {
+        text-align: justify;
+        font-style: italic;
+        background-color: hsl(199, 100%, 90%);
+        padding: 20px;
+        border-top: 3px solid black;
+        border-right: 3px dashed black;
+        border-bottom: 3px dotted black;
+        border-left: 3px double black;
+        width: 500px;
+    }
+
+    span {
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(22, 14, 255);
+        margin: 2px 5x;
+    }
     
-    <title>KCABATIC Pisayantist Profile Page</title>
+    /* is it possible to just compile/put all of them in style.css? it looks ugly when it isnt arranged well,
+    there was no way it wouldve looked organized during the time given for the lab period too🥲🐛*/
+
+</style>
+    <title>Module 5.4</title>
+    
 </head>
 <body>
-    <img src="/design/pshs logo - rgb.png" alt="Pisay Logo" height="70">
-    <h1 style="font-size:60px;">Pisayantist Profile Page</h1>
-     <img src="/netzach/nanana.png" style="width:200px;">
-     <img src="" style="width:200px;">
-    <table>
-  <tr>
-    <td>Name</td>
-    <td>Krystal Leigh E. Cabatic</td>
-  </tr>
-  <tr>
-    <td>Pisay Admission Year</td>
-    <td>2023</td>
-  </tr>
-  <tr>
-    <td>Sections</td>
-    <td> Pearl, Dahlia, Lithium </td>
-  </tr>
-  <tr>
-    <td>Advisers</td>
-    <td> Ma'am Michelle Cuestas, Sir William Lotero, Ma'am Jessa Mae Villanueva Magno </td>
-  </tr>
-  <tr>
-    <td>Interests</td>
-    <td>
-    <ul>
-  <li>Games</li>
-  <li>Arts</li>
-  <li>Music</li>
-  <li>Food</li>
-</ul>  
-</td>
-  </tr>
-  <tr>
-    <td>Field Of Research Interest </td>
-    <td>Chemistry, Biology, FoodChem, </td>
-  </tr>
-    <tr>
-    <td>Career Goals</td>
-    <td> Marine Biology, Food Chemist, Forensic Science </td>
-  </tr>
-  <tr>
-    <td>Social Media</td>
-    <td><a href="https://www.facebook.com/krystalleigh.cabatic">Facebook</a> </td>
-  </tr>
-</table>
-<img src="/design/end-banner-cast.jfif" height="270">
+    <h1 class="lanlan">Office Productivity</h1>
 
-    </body>
-
+    <p>The book contains <span class="bold-text">MS Word 2010, MS Excel 2010, MS PowerPoint 2010 and MS Outlook 2010</span>. The book aims to educate the students in creating documents, worksheets, presentations and organization using different software that may work>
+    
+</body>
 </html>
